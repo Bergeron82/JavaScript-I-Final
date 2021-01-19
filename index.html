@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Cassie Williams 5/6/2019 -->
+<html lang="en">
+    <head>
+        <title>JavaScript Quiz</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="quiz.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>JavaScript Game</h1>
+            </header>
+            <main>
+                <ol>
+                    <li>
+                    <p><strong>What does a "string" represent in JavaScript?</strong></p>
+                    <ol>
+                        <li><input type="radio" name="q2" id="a3">An object composed of thread.</li>
+                        <li><input type="radio" name="q2">An idea that follows a logical path.</li>
+                        <li><input type="radio" name="q2" id="a2">A primitive value or a sequence of characters.</li>
+                    </ol>
+                    <button id="b2">Submit answer</button>
+                    </li>
+                    <li>
+                    <p><strong>Guess the Number:</strong></p>
+                    <button id="g2">Click to guess</button>
+                    </li>
+                    <li>
+                    <p><strong>What is JavaScript syntax?</strong></p>
+                    <ol>
+                        <li><input type="radio" name="q1" id="a1">The rules you must follow as you code statements.</li>
+                        <li><input type="radio" name="q1">The arrangement of words to create well-formed sentences.</li>
+                        <li><input type="radio" name="q1">A tax that must be paid when using JavaScript illegally.</li>
+                    </ol>
+                    <button id="b1">Submit answer</button>
+                    </li>
+                </ol>
+                    <div id="math">
+                    <p id="center"><strong>Using JavaScript for Math:</strong></p>
+                        <label for="n1">Num 1: </label><input type="number" id="n1">&nbsp;
+                        <label for="n2">Num 2: </label><input type="number" id="n2"><br>
+                        <label for="operation">Operator:</label>
+                        <select name="operator" id="operation">
+                            <option value="add">add +</option>
+                            <option value="subtract">subtract -</option>
+                            <option value="multiply">multiply *</option>
+                            <option value="divide">divide /</option>
+                            <option value="modulus">modulus %</option>
+                        </select>
+                        <button id="b3">Calculate!</button>
+                        <p id="answer">Your answer...</p>
+                    </div>
+            <div id="faqs">
+                <h1>JavaScript Operations</h1>
+                <h2><a href="#">What are JavaScript Compound Assignment Operators?</a></h2>
+                    <div class="hide">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>Adds the result of the expression to the variable.</td>
+                        </tr>
+                        <tr>
+                            <td>-=</td>
+                            <td>Subtracts the result of the expression from the variable.</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>Multiplies the variable value by the result of the expression.</td>
+                        </tr>
+                    </table>
+                    </div>
+                <h2><a href="#">What are JavaScript Logical Operators?</a></h2>
+                    <div class="hide">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>&&</td>
+                            <td>AND</td>
+                            <td>Returns a true value if both expressions are true.</td>
+                        </tr>
+                        <tr>
+                            <td>||</td>
+                            <td>OR</td>
+                            <td>Returns a true value if either expression is true.</td>
+                        </tr>
+                        <tr>
+                            <td>!</td>
+                            <td>NOT</td>
+                            <td>Reverses the value of the Boolean expression</td>
+                        </tr>
+                    </table>
+                    </div>
+                <h2><a href="#">What are JavaScript Relational operators?</a></h2>
+                    <div class="hide">
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Equal to</td>
+                            <td>Returns true if both operands are equal.</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Not equal to</td>
+                            <td>Returns true if the operands are not equal.</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>Greater than</td>
+                            <td>Returns true if the left operand is greater than the right operand.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;</td>
+                            <td>Less than</td>
+                            <td>Returns true if the left operand is less than the right operand.</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>Greater than or equal to</td>
+                            <td>Returns true if the left operand is greater than or equal to the right operand.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;=</td>
+                            <td>Less than or equal to</td>
+                            <td>Returns true if the left operand is less than or equal to the right operand.</td>
+                        </tr>
+                    </table>
+                    </div>
+            </div>
+            <!-- Rollover images html -->
+            <ul id="image_list">
+                <li><a href="images/moon.jpg"></a></li>
+                <li><a href="images/moon2.jpg"></a></li>
+            </ul>
+            <blockquote><strong>Roll over the moon to go from ink to acrylic!</strong></blockquote>
+            <p>
+                <img id="image1" src="images/moon.jpg" alt="Moon drawing">
+            </p>
+            </main>
+                <footer>
+                    <p>Created at JCCC for Web 114 Final - Spring 2019<br><strong>Cassie Williams</strong></p>
+                </footer>
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>
